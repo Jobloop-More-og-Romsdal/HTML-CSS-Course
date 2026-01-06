@@ -1,0 +1,76 @@
+/* DEL 1 - FARGER*/
+h1 {
+    color: hsla(190, 90%, 55%, 1);
+    background-color: black;
+    border: 10px solid rgb(248, 10, 10);
+    border-radius: 10px;
+}
+
+h2 {
+    color: hsla(190, 30%, 55%, 1);
+    background-color: black;
+    border: 10px solid rgb(248, 10, 10);
+    border-radius: 10px;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    height: 4000px;
+
+    /* !!! DEL 3 !!!*/
+    background-color: #ff5733;
+}
+
+/* DEL 2 - POSISJONERING */
+.static-box {
+    background: lightgray;
+    padding: 20px;
+    margin: 20px;
+    position: static;
+}
+
+.relative-box {
+    background: lightblue;
+    padding: 20px;
+    margin: 20px;
+    position: relative;
+    top: 20px;
+    left: 20px;
+    /* z-index: 9998; VIS DENNE FOR Å FREMHEVE DEN OM NØDVENDIG */ 
+}
+
+.sticky-box {
+    background: orange;
+    padding: 20px;
+    position: sticky;
+    top: 0;
+    /* z-index: 9999; VIS DENNE FOR Å FREMHEVE DEN OM NØDVENDIG */ 
+}
+
+.fixed-menu {
+    background: black;
+    color: white;
+    padding: 15px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+}
+
+/* DEL 3 - BAKGRUNNER*/
+.hero {
+    background-image:
+      linear-gradient(
+        rgba(0, 0, 0, 0.5),
+        rgba(168, 23, 23, 0.5),
+        rgba(23, 79, 168, 0.5)
+      ),
+      url("https://plus.unsplash.com/premium_photo-1736816227895-e0653ceb1f0e?q=80&w=1975&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D");
+  
+    background-size: cover;
+    background-position: center;
+    width: 1000px;
+    padding: 4rem;
+    color: white;
+}
