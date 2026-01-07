@@ -1,5 +1,7 @@
 :root { /* GLOBALE VARIABLER */
-  --color-primary: #2563EB; /* HOVED FARGE */
+  /* BEST PRACTICE (LIGHTHOUSE): --color-primary: #0051ff */
+  /* BEST PRACTICE (LIGHTHOUSE): --color-secondary: #3d424a */
+  --color-primary: #2563EB;/* HOVED FARGE */
   --color-secondary: #64748B; /* SEKUNDER FARGE - Skal aldri overskygge primærfargen. */
   --spacing-md: 10px; /* medium sized spacing; */
   --spacing-sm: 8px; /* small sized spacing; */
@@ -23,12 +25,14 @@ IKKE:
 */
 
 .btn-primary {
-    /* --color-primary: black; LOKAL VARIABEL */ 
-    background-color: var(--color-primary);
-    padding: var(--spacing-sm) var(--spacing-md);
+  /* BEST PRACTICE (LIGHTHOUSE): color: #fff; */
+  /* --color-primary: black; LOKAL VARIABEL */ 
+  background-color: var(--color-primary);
+  padding: var(--spacing-sm) var(--spacing-md);
 }
 
 .btn-secondary {
-    background-color: var(--color-secondary);
-    padding: var(--spacing-sm) var(--spacing-md);
+  /* BEST PRACTICE (LIGHTHOUSE): color: #fff; */
+  background-color: var(--color-secondary);
+  padding: var(--spacing-sm) var(--spacing-md);
 }
