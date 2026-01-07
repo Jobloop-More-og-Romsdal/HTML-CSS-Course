@@ -1,0 +1,34 @@
+:root { /* GLOBALE VARIABLER */
+  --color-primary: #2563EB; /* HOVED FARGE */
+  --color-secondary: #64748B; /* SEKUNDER FARGE - Skal aldri overskygge primærfargen. */
+  --spacing-md: 10px; /* medium sized spacing; */
+  --spacing-sm: 8px; /* small sized spacing; */
+}
+
+/* HUSK:
+- Globale variabler burde være gjenbrukbare.
+Dette betyr at de skal være abstrakt, uspesifik og staibl.
+
+Eksempler:
+--color-primary
+--color-secondary
+--space-sm
+--space-md
+--radius-md
+--font-size-base
+
+IKKE:
+--button-padding
+--card-gap
+*/
+
+.btn-primary {
+    /* --color-primary: black; LOKAL VARIABEL */ 
+    background-color: var(--color-primary);
+    padding: var(--spacing-sm) var(--spacing-md);
+}
+
+.btn-secondary {
+    background-color: var(--color-secondary);
+    padding: var(--spacing-sm) var(--spacing-md);
+}
