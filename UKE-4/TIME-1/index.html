@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML FORMS</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="app.js" defer></script>
+</head>
+<body>
+    <h1>HTML Forms</h1>
+
+    <!-- 1. Innloggingsskjema -->
+    <form id="login-form">
+        <h2>Innlogging</h2>
+
+        <label for="login-email">E-post</label>
+        <input type="email" id="login-email" required>
+
+        <label for="login-pass">Passord</label>
+        <input type="password" id="login-pass" required>
+
+        <button type="submit">Logg inn</button>
+    </form>
+
+    <!-- 2. Registreringsskjema -->
+    <form>
+        <h2>Registrering</h2>
+
+        <label for="navn">Navn</label>
+        <input type="text" id="navn" required>
+
+        <label for="alder">Alder</label>
+        <input type="number" id="alder" min="0" max="120">
+
+        <label for="epost">E-post</label>
+        <input type="email" id="epost" required>
+
+        <label for="pass">Passord</label>
+        <input type="password" id="pass" minlength="6">
+
+        <button type="submit">Registrer</button>
+    </form>
+
+    <!-- 3. Valgskjema -->
+    <form>
+        <h2>Valg</h2>
+
+        <label>
+        <input type="radio" name="rolle"> Elev
+        </label>
+        <label>
+        <input type="radio" name="rolle"> Lærer
+        </label>
+
+        <h3>Klasse</h3>
+        <select id="klasse" name="klasse">
+            <option value="1A">1A</option>
+            <option value="1B">1B</option>
+            <option value="2A">2A</option>
+            <option value="2B">2B</option>
+        </select>
+
+        <label>
+        <input type="checkbox"> Jeg godtar vilkår
+        </label>
+
+        <button type="submit">Send</button>
+    </form>
+
+    <!-- 4. Dato og tid -->
+    <form>
+        <h2>Dato og tid</h2>
+
+        <label for="dato">Dato</label>
+        <input type="date" id="dato">
+
+        <label for="tid">Tid</label>
+        <input type="time" id="tid">
+
+        <button type="submit">Bestill</button>
+    </form>
+
+    <!-- 5. Spesielle input-typer -->
+    <form>
+        <h2>Andre input-typer</h2>
+
+        <label for="farge">Velg farge</label>
+        <input type="color" id="farge">
+
+        <label for="fil">Last opp fil</label>
+        <input type="file" id="fil">
+
+        <label for="range">Volum</label>
+        <input type="range" id="range" min="0" max="100">
+
+        <button type="submit">Lagre</button>
+    </form>
+</body>
+</html>
