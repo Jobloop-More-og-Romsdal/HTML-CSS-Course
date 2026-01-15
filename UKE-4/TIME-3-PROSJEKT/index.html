@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="no">
+<head>
+  <meta charset="UTF-8">
+  <title>Klassesiden</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+  <h1>Kjærlighet For Naturen</h1>
+  <p>... Fordi naturen er viktig <3</p>
+</header>
+
+<nav>
+  <a href="#om">Om</a>
+  <a href="#media">Media</a>
+  <a href="#kontakt">Kontakt</a>
+</nav>
+
+<main>
+    <section id="om">
+        <h2>Om nettsiden</h2>
+        <p>
+            Dette er en nettside som viser kjærlighet til hunder og natur!
+            Vi bruker bilder, video, musikk og farger for å lage en engasjerende nettside.
+        </p>
+        <img src="assets/images/man-and-dog.jpg" alt="Mann klapper sin kjære hund">
+    </section>
+
+    <section id="media">
+        <h2>Media</h2>
+
+        <h3>Musikk på turen?</h3>
+        <p>Mens du 'turer' rundt på nettsiden kan vi kanskje friste deg med litt musikk?</p>
+        <audio controls>
+            <source src="assets/audio/limitless.mp3" type="audio/mpeg">
+        </audio>
+
+        <h3>Vår forrige tur!</h3>
+        <video controls width="400">
+            <source src="assets/videos/touring.mp4" type="video/mp4">
+        </video>
+    </section>
+
+    <section id="kontakt">
+        <h2>Ønsker du å bli medlem?</h2>
+        <h4>... Ta kontakt da vel!</h4>
+
+        <form>
+            <label>Navn</label>
+            <input type="text" required>
+            
+            <label id="kjonn">Kjønn</label>
+            <select id="kjonn" name="kjonn" required>
+                <option value="man">Mann</option>
+                <option value="woman">Dame</option>
+                <option value="different">Annet</option>
+                <option value="prefer-not-say">Ønsker ikke si</option>
+            </select>
+
+            <label>E-post</label>
+            <input type="email">
+
+            <label>Melding</label>
+            <textarea rows="4"></textarea>
+
+            <button type="submit">Send</button>
+        </form>
+    </section>
+
+    <section id="rating">
+        <form>
+            <div class="stars">
+            <input type="radio" id="star5" name="rating" value="5">
+            <label for="star5" title="5 stjerner">★</label>
+        
+            <input type="radio" id="star4" name="rating" value="4">
+            <label for="star4" title="4 stjerner">★</label>
+        
+            <input type="radio" id="star3" name="rating" value="3">
+            <label for="star3" title="3 stjerner">★</label>
+        
+            <input type="radio" id="star2" name="rating" value="2">
+            <label for="star2" title="2 stjerner">★</label>
+        
+            <input type="radio" id="star1" name="rating" value="1">
+            <label for="star1" title="1 stjerne">★</label>
+            </div>
+            <button type="submit">Send rating</button>
+        </form>
+    </section>
+
+    </main>
+
+    <footer>
+        <p>Laget i HTML & CSS &copy; 2026</p>
+    </footer>
+</body>
+</html>

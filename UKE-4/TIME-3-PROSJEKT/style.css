@@ -1,0 +1,110 @@
+/* DEL 1 - Style Body, og Lag Header, Footer og Nav...*/
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #FFF3E6;
+}
+
+header {
+    background-color: #8B5E3C;
+    color: white;
+    text-align: center;
+    padding: 30px;
+}
+
+footer {
+    text-align: center;
+    padding: 15px;
+    background-color: #8B5E3C;
+    color: white;
+}
+
+nav {
+    background-color: #A6785B;
+    text-align: center;
+    padding: 10px;
+}
+
+nav a {
+    color: white;
+    margin: 0 15px;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+nav a:hover {
+    text-decoration: underline;
+}
+
+/* DEL 2 - Lag seksjoner relatert til header */
+section {
+    background-color: white;
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+img {
+    max-width: 100%;
+    border-radius: 10px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+input, textarea {
+    padding: 10px;
+    margin-bottom: 10px;
+}
+
+button {
+    padding: 10px;
+    background-color: #B06C49;
+    color: white;
+    border: none;
+    border-radius: 5px;
+}
+
+button:hover {
+    background-color: #D99B7C;
+}
+
+select {
+    margin-bottom: 10px;
+    padding: 10px;
+}
+  
+
+textarea {
+    resize: vertical;
+}
+
+
+/* SISTE DEL - Legg til et review form  */
+.stars {
+    flex-direction: row-reverse;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 10px;
+  }
+  
+  .stars input {
+    display: none; /* skjuler radio-knappene */
+  }
+  
+  .stars label {
+    font-size: 30px;
+    color: #ccc; /* grå for ikke valgt */
+    cursor: pointer;
+    padding: 0 5px;
+  }
+
+
+  .stars input:checked ~ label, /* ~ betyr at alle søskene etter dette elementet skal påvirkes */
+  .stars label:hover,
+  .stars label:hover ~ label { 
+    color: #B06C49;
+  }
